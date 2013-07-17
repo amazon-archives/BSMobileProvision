@@ -29,9 +29,14 @@ If you want something less hacky, you should go with something like:
 * [DTFoundation's DTASN1Parser](https://github.com/Cocoanetics/DTFoundation/blob/master/Core/Source/DTASN1Parser.m)
 * [What is a provisioning profile?](http://www.doubleencore.com/2013/02/what-is-a-provisioning-profile-part-1/)
 
-This was made in part possible due to the following [Stack Overflow](http://stackoverflow.com) contributor references:
+This was made in part possible due to the following references:
 
-* [what to look for in the provisioing profile](http://stackoverflow.com/a/3426899/856925)
+* [what to look for in the provisioning profile](http://stackoverflow.com/a/3426899/856925)
 * [building a property list from data](http://stackoverflow.com/a/1072365/856925)
 * [NSScanner tips](http://stackoverflow.com/a/6826076/856925)
 * [the importance of not reading it as UTF8](http://stackoverflow.com/q/17285015/793212)
+* [.mobileprovision Files Structure and Reading](http://idevblog.info/mobileprovision-files-structure-and-reading/)
+
+Somewhat related, Jin Budelmann notes that even when an app (such as one released through the app store) does not have an embedded.mobileprovision, the application binary will still be signed, and that that could be another source of information:
+
+* [How to detect non-jailbroken pirates](http://www.bitcrank.com/blog/?p=37)
