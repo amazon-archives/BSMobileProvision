@@ -6,6 +6,7 @@
 //  Released under the BSD 2-Clause License (see LICENSE)
 
 #import "UIApplication+BSMobileProvision.h"
+#import "TargetConditionals.h"
 
 @implementation UIApplication (BSMobileProvision)
 
@@ -78,7 +79,11 @@
 		// failure to read other than it simply not existing
 		return UIApplicationReleaseUnknown;
 	} else if (![mobileProvision count]) {
+#if TARGET_IPHONE_SIMULATOR
+		return UIApplicationReleaseSim;
+#else
 		return UIApplicationReleaseAppStore;
+#endif
 	} else if ([[mobileProvision objectForKey:@"ProvisionsAllDevices"] boolValue]) {
 		// enterprise distribution contains ProvisionsAllDevices - true
 		return UIApplicationReleaseEnterprise;
