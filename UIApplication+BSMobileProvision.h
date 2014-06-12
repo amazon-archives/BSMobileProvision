@@ -9,6 +9,7 @@
 
 typedef NS_ENUM(NSInteger, UIApplicationReleaseMode) {
 	UIApplicationReleaseUnknown,
+	UIApplicationReleaseSim,
 	UIApplicationReleaseDev,
 	UIApplicationReleaseAdHoc,
 	UIApplicationReleaseAppStore,
