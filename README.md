@@ -27,6 +27,7 @@ Notes
 If you want something less hacky, you should go with something like:
 
 * [DTFoundation's DTASN1Parser](https://github.com/Cocoanetics/DTFoundation/blob/master/Core/Source/DTASN1Parser.m)
+* [TCMobileProvision](https://github.com/tcurdt/TCMobileProvision) (which uses DTASN1Parser)
 * [What is a provisioning profile?](http://www.doubleencore.com/2013/02/what-is-a-provisioning-profile-part-1/)
 
 This was made in part possible due to the following references:
