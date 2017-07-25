@@ -1,3 +1,8 @@
+**Archived**
+============
+
+This project has been archived and is no longer supported by The Blindsight Corporation/Amazon.
+
 BSMobileProvision
 =================
 
